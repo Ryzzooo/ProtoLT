@@ -28,6 +28,7 @@ public class PlayerAttack : MonoBehaviour
             {
                 // Example of playing attack animation
                 anim.SetTrigger(attack_param);
+                 soundmanager.Instance.PlaySound("CatAttack");
                 Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(attackOrigin.position, attackRadius, enemyMask);
                 foreach (var enemy in enemiesInRange)
                 {

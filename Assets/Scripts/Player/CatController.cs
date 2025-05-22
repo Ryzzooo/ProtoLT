@@ -48,8 +48,9 @@ public class CatController : MonoBehaviour
 
     void Movement()
     {
-        float move = Input.GetAxisRaw("Horizontal");
+    float move = Input.GetAxisRaw("Horizontal");
         rb.linearVelocity = new Vector2(move * movementSpeed, rb.linearVelocity.y);
+
 
         if (move != 0)
         {
@@ -72,22 +73,22 @@ public class CatController : MonoBehaviour
         }
     }
 
-    void Jump()
+void Jump()
+{
+    if (Input.GetKeyDown(KeyCode.W) && IsOnGround())
     {
-        if (Input.GetKeyDown(KeyCode.W) && IsOnGround())
-        {
-            rb.linearVelocity = Vector2.up * jumpForce;
-        }
+        rb.linearVelocity = Vector2.up * jumpForce;
+        soundmanager.Instance.PlaySound("CatJump");
+    }
 
-        if (!isJumping && !IsOnGround())
-        {
-            anim.SetTrigger(jump_param);
-            isJumping = true;
-        }
-
-        else if (isJumping && IsOnGround())
-        {
-            isJumping = false;
+    if (!isJumping && !IsOnGround())
+    {
+        anim.SetTrigger(jump_param);
+        isJumping = true;
+    }
+    else if (isJumping && IsOnGround())
+    {
+        isJumping = false;
         }
     }
 
