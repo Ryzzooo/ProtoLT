@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Environment
   - Enemy
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX
