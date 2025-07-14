@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blackcat animation 7frm-3_0: 8053836962086313931
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
