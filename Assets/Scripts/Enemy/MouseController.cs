@@ -13,12 +13,13 @@ public class EnemyController : MonoBehaviour
     public Transform groundChecker;
     public float groundCheckerRadius;
     public LayerMask whatIsGround;
+    public LayerMask whatIsPlatform;
     public Transform healthBarHUD;
 
     void Update()
     {
         transform.Translate(Vector2.right * movementSpeed * Time.deltaTime);
-        if (!ThereIsGround())
+        if (!adaGround())
         {
             if (isFacingRight)
             {
@@ -36,9 +37,19 @@ public class EnemyController : MonoBehaviour
 
     }
 
+    bool adaGround()
+    {
+        return ThereIsGround() || ThereIsPlatform();
+    }
+
     bool ThereIsGround()
     {
         return Physics2D.OverlapCircle(groundChecker.position, groundCheckerRadius, whatIsGround);
+    }
+
+    bool ThereIsPlatform()
+    {
+        return Physics2D.OverlapCircle(groundChecker.position, groundCheckerRadius, whatIsPlatform);
     }
 
     private void OnDrawGizmos()
