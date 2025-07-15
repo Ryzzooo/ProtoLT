@@ -12,7 +12,7 @@ public class EnemyHealth : MonoBehaviour
         maxHealth = health;
     }
 
-public void TakeDamage(int Damage)
+public void TakeDamage(float Damage)
     {
         health -= Damage;
         healthUI.fillAmount = health/maxHealth;

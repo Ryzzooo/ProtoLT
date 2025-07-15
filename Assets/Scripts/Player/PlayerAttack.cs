@@ -24,7 +24,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (cooldownTimer <= 0)
         {
-            if (Input.GetKey(KeyCode.K))
+            if (Input.GetKey(KeyCode.J))
             {
                 // Example of playing attack animation
                 anim.SetTrigger(attack_param);

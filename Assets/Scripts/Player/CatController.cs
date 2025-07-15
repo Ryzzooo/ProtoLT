@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,6 +9,11 @@ public class CatController : MonoBehaviour
     public float movementSpeed, jumpForce;
     private float tmpMovementSpeed;
     public bool isFacingRight, isJumping;
+    private bool canDash = true;
+    private bool isDashing;
+    private float dashingPower = 24f;
+    private float dashingTime = 0.2f;
+    private float dashingCooldown = 1f;
     Rigidbody2D rb;
     Collider2D bc;
     public GameObject winScreenUI;
@@ -38,13 +43,28 @@ public class CatController : MonoBehaviour
 
     void Update()
     {
+        if (isDashing)
+        {
+            return;
+        }
+
         Jump();
         Down();
         Run();
+
+        if (Input.GetKeyDown(KeyCode.Q) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
     }
 
     private void FixedUpdate()
     {
+        if (isDashing)
+        {
+            return;
+        }
+
         Movement();
     }
 
@@ -53,6 +73,20 @@ public class CatController : MonoBehaviour
         return isGrounded() || isGrounded2() || isGrounded3();
     }
 
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
+        float dashDirection = isFacingRight ? 1f : -1f;
+        rb.linearVelocity = new Vector2(dashDirection * dashingPower, 0f);
+        yield return new WaitForSeconds(dashingTime);
+        rb.gravityScale = originalGravity;
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
+    }
 
     void Movement()
     {
