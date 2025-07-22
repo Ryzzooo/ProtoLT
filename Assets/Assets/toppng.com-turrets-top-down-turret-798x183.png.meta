@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: a7660e69ec08d0b46bf32076967ce3e8
+guid: 1233cdff9a219d0429bdecf8b395901c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2210963766495152390
-    second: Tutup Tong Sampah-Sheet_0
+      213: 2914357660844136178
+    second: toppng.com-turrets-top-down-turret-798x183_0
   - first:
-      213: -4172671311070598952
-    second: Tutup Tong Sampah-Sheet_1
+      213: -1272156674648701837
+    second: toppng.com-turrets-top-down-turret-798x183_1
   - first:
-      213: -309647677188145020
-    second: Tutup Tong Sampah-Sheet_2
+      213: -2889262233872520059
+    second: toppng.com-turrets-top-down-turret-798x183_2
   - first:
-      213: -3918338980523096249
-    second: Tutup Tong Sampah-Sheet_3
+      213: 2851878683286823909
+    second: toppng.com-turrets-top-down-turret-798x183_3
+  - first:
+      213: 1192508469578276441
+    second: toppng.com-turrets-top-down-turret-798x183_4
+  - first:
+      213: -2110605354038932141
+    second: toppng.com-turrets-top-down-turret-798x183_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,30 +111,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tutup Tong Sampah-Sheet_0
+      name: toppng.com-turrets-top-down-turret-798x183_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 80
-        width: 146
-        height: 32
+        x: 0
+        y: 1
+        width: 136
+        height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af6fbc62b241151e0800000000000000
-      internalID: -2210963766495152390
+      spriteID: 2f69d030ad0e17820800000000000000
+      internalID: 2914357660844136178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tutup Tong Sampah-Sheet_1
+      name: toppng.com-turrets-top-down-turret-798x183_1
       rect:
         serializedVersion: 2
-        x: 215
-        y: 80
-        width: 146
-        height: 32
+        x: 176
+        y: 35
+        width: 85
+        height: 83
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d86c23ec81b716c0800000000000000
-      internalID: -4172671311070598952
+      spriteID: 3740cec9e34685ee0800000000000000
+      internalID: -1272156674648701837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tutup Tong Sampah-Sheet_2
+      name: toppng.com-turrets-top-down-turret-798x183_2
       rect:
         serializedVersion: 2
-        x: 407
-        y: 80
-        width: 146
-        height: 32
+        x: 294
+        y: 28
+        width: 71
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4800da30419e3bbf0800000000000000
-      internalID: -309647677188145020
+      spriteID: 58ca3176e4747e7d0800000000000000
+      internalID: -2889262233872520059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tutup Tong Sampah-Sheet_3
+      name: toppng.com-turrets-top-down-turret-798x183_3
       rect:
         serializedVersion: 2
-        x: 599
-        y: 80
-        width: 146
-        height: 32
+        x: 457
+        y: 0
+        width: 151
+        height: 164
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +196,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 747ca5c15734f99c0800000000000000
-      internalID: -3918338980523096249
+      spriteID: 5e3e1d37d88e39720800000000000000
+      internalID: 2851878683286823909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-turrets-top-down-turret-798x183_4
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 27
+        width: 70
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95e9bd88224ac8010800000000000000
+      internalID: 1192508469578276441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-turrets-top-down-turret-798x183_5
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 28
+        width: 85
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35dc87bec9f95b2e0800000000000000
+      internalID: -2110605354038932141
       vertices: []
       indices: 
       edges: []
@@ -222,11 +259,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Tutup Tong Sampah-Sheet_0: -2210963766495152390
-      Tutup Tong Sampah-Sheet_1: -4172671311070598952
-      Tutup Tong Sampah-Sheet_2: -309647677188145020
-      Tutup Tong Sampah-Sheet_3: -3918338980523096249
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
