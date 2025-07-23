@@ -151,6 +151,9 @@ MonoBehaviour:
   speed: 15
   damage: 1
   destroyTime: 2
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!50 &5352317278688826427
 Rigidbody2D:
   serializedVersion: 5

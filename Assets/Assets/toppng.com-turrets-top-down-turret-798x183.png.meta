@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      toppng.com-turrets-top-down-turret-798x183_0: 2914357660844136178
+      toppng.com-turrets-top-down-turret-798x183_1: -1272156674648701837
+      toppng.com-turrets-top-down-turret-798x183_2: -2889262233872520059
+      toppng.com-turrets-top-down-turret-798x183_3: 2851878683286823909
+      toppng.com-turrets-top-down-turret-798x183_4: 1192508469578276441
+      toppng.com-turrets-top-down-turret-798x183_5: -2110605354038932141
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

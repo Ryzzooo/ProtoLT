@@ -3,6 +3,7 @@ using UnityEngine;
 public class BulletBehaviour : MonoBehaviour
 {
     public float speed, damage, destroyTime;
+    public LayerMask enemyLayer;
 
     private void Awake()
     {
@@ -15,21 +16,19 @@ public class BulletBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+       if ((enemyLayer.value & (1 << collision.gameObject.layer)) > 0)
         {
-            // collision.transform.parent.GetComponent<EnemyHealth>().TakeDamage(damage);
-            // Destroy(gameObject);
             EnemyHealth enemy = collision.GetComponentInParent<EnemyHealth>();
-        if (enemy != null)
-        {
-            enemy.TakeDamage(damage);
-        }
-        else
-        {
-            Debug.LogWarning("EnemyHealth tidak ditemukan pada atau di atas " + collision.name);
-        }
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damage);
+            }
+            else
+            {
+                Debug.LogWarning("EnemyHealth tidak ditemukan pada atau di atas " + collision.name);
+            }
 
-        Destroy(gameObject);
+            Destroy(gameObject);
         }
         else if (collision.CompareTag("Environment"))
         {
